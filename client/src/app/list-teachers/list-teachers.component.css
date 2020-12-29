@@ -1,0 +1,179 @@
+h5{ 
+     
+  color: darkblue;
+  text-align: center;
+  font-weight: bold;
+  margin-top:10px;
+  
+  }
+  
+   */
+div{
+
+  width: 40%;
+  height: auto;
+  text-align: center;
+    
+  } 
+
+.card {
+
+  display: grid;
+  grid-template-columns: 375px; 
+  grid-template-rows: 210px auto 80px; 
+  grid-template-areas: "image" "text" "stats";
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  text-align: center;
+  float: left; 
+  
+}
+
+.card-image {
+  grid-area: image;
+}
+.card-text {
+  grid-area: text;
+  
+}
+.card-stats {
+  grid-area: stats; 
+}
+
+.card-image {
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-text {
+  grid-area: text;
+  margin: 25px;
+}
+.card-text .topic {
+  color: rgb(255, 7, 110);
+  font-size:13px;
+}
+.card-text p {
+  color: rgb(54, 25, 25);
+  font-size:18px;
+  font-weight: 500;
+  overflow: auto;
+  
+}
+.card-text h2 {
+  margin-top:0px;
+  font-size:28px;
+}
+
+.card-stats {
+  grid-area: stats; 
+  display: grid;
+  grid-template-columns:  1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background:  rgb(146, 173, 197);
+}
+
+.card-stats .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding:10px;
+}
+
+.card {
+
+  transition: 0.5s ease;
+  cursor: pointer; 
+  margin:30px; 
+  padding: 10px;
+  
+}
+
+img{ 
+
+  width: 100%;
+  height: 100%;
+}
+
+.name{
+
+  color: rgb(30, 43, 30);
+}
+
+.city{
+  color: rgb(24, 163, 206);
+}
+
+.time b{
+  color: rgb(223, 112, 112);
+}
+
+p {
+  font-style: italic;
+  color: rgb(5, 2, 2);
+  font-weight: bold;
+}
+
+
+.head{
+
+  width: 90%;
+  margin:0 auto;
+  height: auto;
+  background-color: rgb(208, 228, 245);
+  text-align: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  
+ 
+}
+
+.lis{
+  width:92%; 
+  height: 80%;
+  margin: 0 auto;
+ 
+}
+
+mat-form-field{
+
+  margin:20px;
+}
+
+.counter{
+  text-align: center;
+  margin-top:10px;
+  font-weight: bold;
+  font-family: roboto;
+}
+
+ a{
+  color:rgb(207, 29, 29);
+}
+.type{
+  color:rgb(207, 29, 29);
+}
+
+.value{
+  color: rgb(75, 13, 13);
+}
+
+.expired{
+
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  margin-top: center;
+}
+

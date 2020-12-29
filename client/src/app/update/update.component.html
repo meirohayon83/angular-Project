@@ -1,0 +1,89 @@
+
+ <div class="formcontainer">
+   <div class="formbody">
+    <form [formGroup]="myPost">
+     <div>
+      <div class = "header">update</div>
+        <p>
+         <mat-form-field appearance="legacy">
+            <mat-label>name</mat-label>
+             <input  matInput formControlName="name">
+             <mat-icon matSuffix>person</mat-icon>
+           </mat-form-field>
+           <mat-error *ngIf="isValid('name')">Name is required</mat-error>
+        </p> 
+   
+        <p>
+         <mat-form-field appearance="standard">
+          <mat-label>lastName</mat-label>
+            <input matInput formControlName="lastName" >
+            <mat-icon matSuffix>person</mat-icon>
+          </mat-form-field>
+          <mat-error *ngIf="isValid('lastName')">lastName is required</mat-error>
+        </p>  
+     
+        <p>
+         <mat-form-field appearance="legacy">
+          <mat-label>Topic</mat-label>
+            <input matInput formControlName="topic"  >
+            <mat-icon matSuffix>topic</mat-icon>
+          </mat-form-field>
+          <mat-error *ngIf="isValid('topic')">Topic is required</mat-error>
+        </p>
+   
+        <p>
+         <mat-form-field appearance="legacy">
+           <mat-label>Time</mat-label>
+            <mat-select  matInput formControlName = "time" >
+              <mat-option value="morning">Morning</mat-option>
+              <mat-option value="noon"> noon</mat-option>
+              <mat-option value="evening">evening</mat-option>
+            </mat-select>
+            <mat-icon matSuffix>watch_later</mat-icon>
+          </mat-form-field>
+          <mat-error *ngIf="isValid('time')">time is required</mat-error>
+        </p>
+   
+        <p>
+         <mat-form-field appearance="legacy">
+           <mat-label>days</mat-label>
+            <input matInput formControlName="days">
+            <mat-icon matSuffix>schedule</mat-icon>
+         </mat-form-field>
+         <mat-error *ngIf="isValid('days')">days is required</mat-error>
+        </p>
+   
+        <p>
+         <mat-form-field appearance="legacy">
+           <mat-label>choice Image</mat-label>
+            <ngx-mat-file-input formControlName="image"   ></ngx-mat-file-input>
+            <mat-icon matSuffix>attach_file</mat-icon> 
+         </mat-form-field>
+        </p>
+
+       <div class="set">
+        <p>
+         <mat-form-field appearance="legacy">
+           <mat-label>description</mat-label>
+            <textarea matInput formControlName="description"></textarea>
+            <mat-icon matSuffix>text_edit</mat-icon>
+         </mat-form-field>
+         <mat-error *ngIf="isValid('description')">description is required</mat-error>
+        </p>
+      </div>
+
+     <div>{{update}}</div>
+      <div class="bt">
+        <button class="btn" mat-raised-button color="accent"  (click)="addPosts()" type="submit">update</button>
+        <div>{{successMessage}}</div>
+      </div>
+     </div>
+   </form>
+   
+   </div>
+  </div>
+   
+   
+   
+   
+

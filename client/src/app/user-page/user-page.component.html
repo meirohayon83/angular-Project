@@ -1,0 +1,84 @@
+
+<div class="formcontainer">
+    <div class="formbody">
+        <form style="width:100%;" [formGroup]="myForm">
+            <div class="header">UpdateRegister</div>
+        
+            <div>
+                <mat-form-field style="width:100%;">
+                    <input type="text" formControlName="nickName" matInput placeholder="NewNickName" id="user" required>
+                    <mat-icon matSuffix>person</mat-icon>
+                </mat-form-field>
+                <mat-error *ngIf="isValid('nickName')">nickName is required</mat-error>
+            </div>
+
+            <div>
+                <mat-form-field style="width:100%;">
+                    <input type="text" formControlName="phone" matInput placeholder="phone" id="phone" required>
+                    <mat-icon matSuffix>phone</mat-icon>
+                </mat-form-field>
+                <mat-error *ngIf="isValid('phone')">phone is required</mat-error>
+            </div>
+
+            <div>
+                <mat-form-field style="width:100%;">
+                    <input type="text" formControlName="city" matInput placeholder="city" id="city" required >
+                    <mat-icon matSuffix>address </mat-icon>
+                </mat-form-field>
+                <mat-error *ngIf="isValid('city')">city is invalid</mat-error>
+               
+            </div>
+
+            <div>
+                <mat-form-field style="width:100%;">
+                    <input type="text" formControlName="neighborhood" matInput placeholder="neighborhood" id="neighborhood" required >
+                    <mat-icon matSuffix>address </mat-icon>
+                </mat-form-field>
+                <mat-error *ngIf="isValid('neighborhood')">neighborhood is invalid</mat-error>
+               
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            <div>
+                <mat-form-field style="width:100%;">
+                    <input type="password" formControlName="password" matInput placeholder="NewPassword" required id="password">
+                    <mat-icon matSuffix>lock</mat-icon>
+                </mat-form-field>
+                <mat-error *ngIf="isValid('password')"> password is required</mat-error>
+                
+                
+            </div>
+            <div>
+              <mat-form-field style="width:100%;">
+                  <input type="password" formControlName="confirmPassword" required matInput placeholder="ConfirmNewPassword" id="copassword">
+                  <mat-icon matSuffix>lock</mat-icon>
+              </mat-form-field>
+              <mat-error *ngIf="isValid('confirmPassword')"> confirmPassword is required</mat-error>
+              <mat-error *ngIf="myForm.errors?.invalid">Password doesn't match</mat-error>
+              
+          </div>
+            
+            <div style="margin-top:20px;">
+                <button class="btn" mat-raised-button color="accent"  (click)="updateRegister()" type="submit">UpdateRegister</button>
+            </div>
+           
+  
+                
+            <div style="text-align: center">                
+                {{successMessage}}
+            </div>
+        </form>
+    </div>
+  
+   
+  </div>

@@ -1,0 +1,18 @@
+textarea{
+    width:100%;
+}
+
+mat-dialog-content{
+
+    text-align:center; 
+    margin-bottom: 20px;
+}
+
+
+h2{
+
+    text-align:center;
+    margin-bottom: 20px;
+    color: blue;
+}
+

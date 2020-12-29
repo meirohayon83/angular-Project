@@ -1,0 +1,27 @@
+
+<div class="login-page">
+    <h1 style="text-align:center;">Please enter your email address to receive<br> email to reset your password</h1>
+     <mat-card class="mat-elevation-z12">
+      <mat-card-content >
+       <form  >
+         <mat-form-field >
+           <input matInput  placeholder="Email" name="email"  type="email" [(ngModel)]="email" required>
+           <mat-icon matSuffix>email</mat-icon> 
+         </mat-form-field>
+           <mat-error *ngIf=!access>{{successMessage}}</mat-error> 
+           <mat-error *ngIf= access>{{successMessage}}</mat-error>
+           
+          <button
+            mat-raised-button
+            class="login-button"
+            (click)="loginUser()">
+            Sign In
+          </button>
+
+        </form> 
+       </mat-card-content>
+      </mat-card> 
+     </div>
+ 
+ 
+ 

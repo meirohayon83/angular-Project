@@ -1,0 +1,45 @@
+
+<div class="login-page">
+  
+    <mat-card class="mat-elevation-z12">
+     <mat-card-content >
+       <form  [formGroup]="loginForm">
+         <mat-card-title class="login-button" >login</mat-card-title>
+
+           <mat-form-field >
+              <mat-label>Email</mat-label>
+              <input  matInput  placeholder="Email" name="email"  type="email" formControlName="email"  required>
+              <mat-icon matSuffix>email</mat-icon>
+              <mat-error *ngIf="isValid('email')">Entered email is invalid</mat-error>
+           </mat-form-field>
+           
+           <mat-form-field >
+              <mat-label>Password</mat-label>
+              <input  matInput  placeholder="Password" name="password"  type="password"  formControlName="password"  required>
+              <mat-icon matSuffix>lock</mat-icon>
+              <mat-error *ngIf="isValid('password')">Entered Password is invalid</mat-error>
+           </mat-form-field>
+          
+           <button
+             mat-raised-button
+             class="login-button"
+             (click)="loginUser()">
+             Sign In
+           </button>
+        
+        <a  routerLink="/register" class="login-button"  style="text-align:center;" >NOT LOGGED YET</a>
+        <a  class="login-button" routerLink="/forget"    style="text-align:center;">Reset your password</a>
+     
+      </form>
+     </mat-card-content>
+   <div class="msg">{{successMessage}}</div>
+  </mat-card> 
+
+ </div>
+  
+  
+  
+  
+  
+  
+   

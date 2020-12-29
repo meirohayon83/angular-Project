@@ -1,0 +1,92 @@
+
+.formcontainer{
+    
+     margin-top: 10px;  
+     width: 100%;
+     height: auto;
+     background-color: rgb(196, 116, 153);  
+     display: flex;
+
+} 
+
+.formbody{
+     margin: 0 auto; 
+     text-align: center; 
+     width:50%;
+     background-color:white;
+     box-shadow:0 5px 10px 0px rgba(58, 9, 9, 0.1);
+     border-radius: 15px;
+     padding: 20px;
+     margin-top: 20px; 
+     margin-bottom: 20px;
+} 
+
+
+
+p{
+
+    display: inline-table; ;
+    margin: 20px;
+    padding: 15px;
+}
+
+
+.header{
+    width: auto; 
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 0px;
+    background-color: silver;   
+    color: black;  
+    box-shadow:0 5px 10px 0px rgba(87, 67, 67, 0.1);
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.confirm{
+   
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 5px;
+    background-color: rgb(93, 133, 167);   
+    color: rgb(70, 15, 15);  
+    box-shadow:0 5px 10px 0px rgba(87, 67, 67, 0.1);
+    border-radius: 10px;
+    margin-bottom: 5px;
+
+}
+
+mat-label{
+    color:black;
+}
+
+mat-icon{
+
+   color:rgb(224, 131, 131);
+}
+
+.bt{
+
+   margin:0 auto;
+}
+
+.btn{
+ 
+   width:40%;
+  
+} 
+
+
+.set{
+
+   box-shadow:0 5px 10px 0px rgba(218, 63, 63, 0.1);
+   border-radius: 10px;
+   margin-bottom: 5px;
+}
+
+input{
+
+   color:black;
+}
+

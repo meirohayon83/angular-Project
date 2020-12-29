@@ -1,0 +1,59 @@
+
+<div class = "expired" *ngIf="expired">{{expired}}</div>
+
+<div *ngIf="!expired">
+ 
+  <div class="head"> 
+     <h5>search teacher</h5>
+
+   <mat-form-field >
+     <input matInput  [(ngModel)]="city" (keyup)="chooseCity()"  placeholder="city" />
+   </mat-form-field >
+
+   <mat-form-field >
+     <input matInput  [(ngModel)]="neighborhood" (keyup)="chooseCity()"  placeholder="neighborhood" />
+   </mat-form-field>
+
+   <mat-form-field>
+     <input matInput  [(ngModel)]="topic" (keyup)="chooseCity()"  placeholder="topic"/>
+   </mat-form-field>
+
+   <mat-form-field appearance="legacy">
+     <mat-select  matInput  [(ngModel)]="time" placeholder="Select time" >
+      <mat-option *ngFor="let item of times" [value]="item" (click)="chooseCity()">{{item}}</mat-option>
+     </mat-select>
+   </mat-form-field> 
+
+</div>
+
+ <div class = "counter">
+  <div *ngIf= list.length>found {{count}} teachers in the list</div>
+  <div *ngIf= !list.length>{{message}}</div>
+</div>
+
+<div class=" lis"  > 
+ <div class="card"  *ngFor= "let event of list" >
+  <img  class="card-image" src="{{event.image}}" alt="">
+  
+ <div class="card-text">
+
+    <h6>signed up {{event.date}}</h6>
+    <span class="topic"><b>{{event.topic}}</b></span>
+    <h2 class = "name">{{event.name}} {{event.lastName}}</h2>
+    <h5 class = "city">{{event.city}}</h5>
+    <h6>{{event.neighborhood}}</h6>
+    <h6 class = "time"> <b>avaliable every:</b> {{event.days}} <b>in:</b>{{event.time}}</h6>
+    <p>about me:<br>{{event.description}}</p>
+
+  </div>
+ 
+  <div class="card-stats">
+    
+    
+  <div class="stat">
+      <div class="type"><a href="mailto:{{event.email}}" (click)="dialoge(event.email)">click here to send a message</a></div>
+   </div>
+  </div>
+ </div>
+</div> 
+ 

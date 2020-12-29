@@ -1,0 +1,205 @@
+
+.formcontainer{
+     
+     background-color: rgb(185, 165, 175);
+     margin-top: 10px;  
+     width: 100%;
+     height: auto;
+     background-color: rgb(196, 116, 153);  
+     display: flex;
+    
+
+} 
+
+.formbody{
+    margin: 0 auto; 
+    text-align: center; 
+    width:50%;
+    background-color:white;
+    box-shadow:0 5px 10px 0px rgba(58, 9, 9, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    
+  }
+
+ p{
+
+    display: inline-table; ;
+    margin: 20px;
+    padding: 15px;
+}
+
+.header{
+    width: auto; 
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 0px;
+    background-color: silver;   
+    color: black;  
+    box-shadow:0 5px 10px 0px rgba(87, 67, 67, 0.1);
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.confirm{
+   
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 5px;
+    background-color: rgb(93, 133, 167);   
+    color: rgb(70, 15, 15);  
+    box-shadow:0 5px 10px 0px rgba(87, 67, 67, 0.1);
+    border-radius: 10px;
+    margin-bottom: 5px;
+
+}
+
+mat-label{
+    color:black;
+}
+
+mat-icon{
+
+    color:rgb(224, 131, 131);
+}
+
+
+.bt{
+
+   margin:0 auto;
+
+}
+.btn{ 
+    width:50%; 
+} 
+
+.set{
+
+    box-shadow:0 5px 10px 0px rgba(129, 81, 81, 0.1);
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+input{
+
+    color:black;
+}
+
+table{
+
+    margin:0 auto;
+    width: 800px;
+    padding: 30px;
+    height: 100px;
+}
+
+ngx-mat-file-input {
+
+    font-size: 1rem;
+}
+
+h1{
+    text-align: center;
+}
+
+div{
+
+    text-align: center;
+    margin-top: 20px;
+    color: darkblue;
+    font-weight: bold;
+}
+
+
+.card {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 180px 80px auto; 
+    grid-template-areas:  "text" "stats" "message";
+    border-radius: 18px;
+    background: rgb(247, 236, 236);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+    float: left; 
+  
+  }
+
+.card-message{
+    grid-area: text;
+  }
+  
+  
+.card-text {
+    grid-area: text;
+
+  }
+.card-stats {
+
+    grid-area: stats; 
+  }
+.card-text {
+
+    grid-area: text;
+    margin: 25px;
+  }
+
+.card-message{
+    
+     margin: 15px; 
+  }
+ 
+ 
+.card-text h2 {
+    margin-top:0px;
+    font-size:20px;
+  }
+  
+.card-stats {
+    grid-area: stats; 
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.9px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background:  rgb(161, 122, 152);
+  }
+  
+.card-stats .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+  }
+  
+  
+.card {
+  
+    transition: 1.5s ease;
+    cursor: pointer; 
+    
+  }
+span{
+
+     color: rgb(36, 34, 37);
+     font-size: 22px;
+  }
+
+.head{
+
+     width:30%;
+     margin:0 auto;
+     
+  }
+
+.value{
+    color: rgb(178, 183, 231);
+  }
+
+ 

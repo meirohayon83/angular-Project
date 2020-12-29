@@ -1,0 +1,58 @@
+
+ .spacer {
+    flex: 1 1 auto;
+  }
+.hidden{
+    display: none;
+  }
+.sidenav-container {
+    height: 100%;
+  } 
+.sidenav {
+    width: 200px;
+  } 
+.sidenav .mat-toolbar {
+    background: inherit;
+  } 
+.mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  } 
+mat-toolbar a{
+  
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  } 
+mat-icon{
+  
+    color:rgb(22, 41, 49);
+    height: 28px;
+    width: 25px;
+
+  }
+  
+.end{
+  
+    text-align:center;
+    background-color:rgb(173, 64, 173);
+    margin-bottom: 0px; 
+    margin-top:10px;
+     
+  }
+
+.mat-drawer-container {
+  
+    background-color: white;
+    height: 100%;
+    
+  }
+
+.login-page[_ngcontent-bia-c8] {
+  
+    height: 70%;
+  }
+  
+ 
