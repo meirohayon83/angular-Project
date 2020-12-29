@@ -2,7 +2,7 @@
 server:
 
 connect to mongoDB.
-resister with validation +  send mail to the new user.
+register with validation +  send mail to the new user.
 login + validation.
 forget password.
 update user profile.
@@ -16,7 +16,7 @@ delete teacher card.
 
 
 client:
-resister with getting mail to accept.
+register with getting mail to accept.
 login.
 forget password.
 update user profile.
